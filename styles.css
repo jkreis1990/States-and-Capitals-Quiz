@@ -1,0 +1,103 @@
+html, body {
+	margin: 20px;
+	padding: 0;
+	display: flex;
+	background-color: white;
+	justify-content: center;
+	align-items: center;
+	font-family: Arial; 
+	font-size: 30;
+}
+.quiz {
+	height:750px;
+	width: 750px;
+	display: flex;
+	flex-direction: column;	
+	justify-content: center;
+	align-items: center;
+}
+#state {
+	display: flex;
+	width: inherit;
+	height: 65%;
+	flex-direction: column;
+}
+#graphic {
+	display: flex;
+	width: inherit;
+	height: 85%;
+}
+#flag {
+	display: flex;
+	width: 100%;
+}
+#question {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+	align-items: center;
+	font: inherit;
+	font-size: inherit;
+	margin-top: 30px;
+}
+#input {
+	display: flex;
+	width: inherit;
+	height: 35%;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+#choices, #navigationButtons {
+	width: inherit;
+	height: inherit;
+	display: flex;
+    justify-content: inherit;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+button {
+    width: 49.5%;
+    height: 44%;
+	display: flex;
+    justify-content: center;
+	border: 2px solid grey;
+	margin: 0px;
+	font-size: inherit;
+}
+.choice {
+	background-color: rgb(230, 230, 230);
+}
+.button {
+	background-color: rgb(169, 183, 214)
+}
+.choice:hover, .button:hover {
+	background-color: rgb(170, 170, 170);
+	cursor: pointer;
+}
+button:focus {
+	background-color: rgb(185, 185, 185);
+	outline: 0;
+}
+button[correct=true] {
+	background-color: #a8d8a8;
+}
+button[correct=false] {
+	background-color: #da9494;
+}
+#startAndEnd {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+#start {
+	justify-content: inherit;
+	align-items: center;
+	height: 60%;
+	margin-top: 30px;
+}
+#intro {
+	display: flex;
+}
