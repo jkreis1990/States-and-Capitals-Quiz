@@ -125,6 +125,7 @@ var submitButton = document.getElementById("submit");
 var nextButton = document.getElementById("next");
 var returnButton = document.getElementById("return");
 var buttons = document.getElementsByClassName("button");
+var progressBanner = document.getElementById("progress");
 var scoreDiv = document.getElementById("scoreContainer");
 
 startButton.addEventListener("click", startQuiz);
@@ -168,6 +169,8 @@ function renderQuestion() {
   returnButton.style.display = "flex";
   submitButton.style.display = "none";
   nextButton.style.display = "none";
+  progressBanner.style.backgroundColor = "white";
+  progressBanner.innerHTML = "";
 }
 
 function select(choice) {
@@ -216,6 +219,8 @@ function checkAnswer() {
     submitButton.style.display = "none";
     nextButton.style.display = "flex";
   }
+  progressBanner.style.backgroundColor = "lightgrey";
+  progressBanner.innerHTML = "You have answered " + correctAnswers + " out of " + totalQuestions + " questions correctly";
   if (totalQuestions == quizLength) {
     nextButton.innerHTML = "Finish";
   }
