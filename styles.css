@@ -62,6 +62,7 @@ button {
     height: 44%;
 	display: flex;
     justify-content: center;
+	align-items: center;
 	border: 2px solid grey;
 	margin: 0px;
 	font-size: inherit;
