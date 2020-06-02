@@ -9,17 +9,17 @@ html, body {
 	font-size: 30;
 }
 .quiz {
-	height:750px;
-	width: 750px;
 	display: flex;
+	height: 850px;
+	width: 715px;
 	flex-direction: column;	
 	justify-content: center;
 	align-items: center;
 }
 #state {
 	display: flex;
+	height: 60%;
 	width: inherit;
-	height: 65%;
 	flex-direction: column;
 }
 #graphic {
@@ -42,20 +42,20 @@ html, body {
 }
 #input {
 	display: flex;
+	height: 30%;
 	width: inherit;
-	height: 35%;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 }
 #choices, #navigationButtons {
-	width: inherit;
-	height: inherit;
 	display: flex;
+	width: inherit;
+	height: 50%;
     justify-content: inherit;
 	align-items: flex-start;
 	flex-wrap: wrap;
-	margin-top: 30px;
+	margin-top: 3%;
 }
 button {
     width: 49.5%;
@@ -85,6 +85,13 @@ button[correct=true] {
 }
 button[correct=false] {
 	background-color: #da9494;
+}
+#progress {
+	display: flex;
+	height: 10%;
+	width: inherit;
+	justify-content: center;
+	align-items: center;
 }
 #startAndEnd {
 	display: flex;
